@@ -162,19 +162,6 @@ td:empty {
     font-size: 20px;
 }
 
-.search-btn {
-    background: #ced9e7;
-    padding: 10px 40px;
-    border-radius: 40px;
-    font-weight: 600;
-    border: 1px solid #7d91aa;
-    color: #021c39;
-    box-shadow: 0 2px 4px #0000001a;
-    letter-spacing: 0.5px;
-    cursor: default;
-    font-size: 18px;
-}
-
 .weather-icon {
     font-size: 26px;
 }
