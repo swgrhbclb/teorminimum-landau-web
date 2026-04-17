@@ -3,110 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Теоретический минимум Ландау</title>
+    <title>Теорминимум Ландау</title>
+    <meta name="description" content="Авторский сайт о теоретическом минимуме Ландау: экзамены, прогресс, дисциплины и атмосфера большого физического пути.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page">
-        <h1>Теоретический минимум Ландау</h1>
-
-        <div class="description">
-            <p>Теоретический минимум Ландау состоит из 11 экзаменов по основным разделам математики и теоретической физике. Сдавать экзамены может любой желающий в произвольном порядке.<br>
-            Для сдачи каждого экзамена нужно в индивидуальном порядке договориться с соответствующим экзаменатором. Экзамены по теоретической физике даются по материалу курса «Теоретическая физика» Л.Д. Ландау и Е.М. Лифшица в объеме, указанном на странице соответствующего экзамена. Некоторые экзамены Теоретического минимума входят в обязательную учебную программу для студентов кафедры <strong>Проблемы теоретической физики</strong> МФТИ.</p>
-        </div>
-
-        <div class="note">📋 Сдавшие теоретический минимум (список продолжает пополняться)</div>
-
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Квантовая теория мытья посуды</th>
-                        <th>Математика-1</th>
-                        <th>Механика</th>
-                        <th>Теория поля</th>
-                        <th>Математика-2</th>
-                        <th>Квантовая механика</th>
-                        <th>Квантовая электродинамика</th>
-                        <th>Статистическая физика-1</th>
-                        <th>Механика сплошных сред</th>
-                        <th>Электродинамика сплошных сред</th>
-                        <th>Статистическая физика-2</th>
-                        <th>Физическая кинетика</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="special-person">
-                        <td>Катя Никулина</td>
-                        <td class="passed-year">2026</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    <tr>
-                    <tr class="special-person">
-                        <td>Андрей Иванов</td>
-                        <td></td>
-                        <td class="passed-year">завтра</td>
-                        <td class="passed-year">завтра</td>
-                        <td class="passed-year">завтра</td>
-                        <td class="passed-year">завтра</td>
-                        <td class="passed-year">послезавтра</td>
-                        <td class="passed-year">завтра</td>
-                        <td class="passed-year">завтра</td>
-                        <td class="passed-year">завтра</td>
-                        <td class="passed-year">завтра</td>
-                        <td class="passed-year">завтра</td>
-                        <td class="passed-year">завтра</td>
-                    </tr>
-                    <tr class="special-person">
-                        <td>Никита Першаков</td>
-                        <td></td>
-                        <td class="passed-year">2026</td>
-                        <td class="passed-year">2026</td>
-                        <td class="passed-year">2026</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr class="special-person">
-                        <td>Марк Андронов</td>
-                        <td></td>
-                        <td class="passed-year">1991</td>
-                        <td class="passed-year">2026</td>
-                        <td></td>
-                        <td class="passed-year">2026</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="footer-bar">
-            <div class="weather">
-                <span class="weather-icon">☁️</span>
-                <span class="temp">-7°C</span>
-                <span>Облачно</span>
-            </div>
-        </div>
+    <div class="site-glow" aria-hidden="true"></div>
+    <div class="particles" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
+
+    <header class="hero">
+        <nav class="topbar">
+            <a class="brand" href="#top">Landau Minimum</a>
+            <div class="topbar-links">
+                <a href="#about">О проекте</a>
+                <a href="#tracks">Экзамены</a>
+                <a href="#board">Прогресс</a>
+            </div>
+            <button class="mode-toggle" type="button" aria-pressed="false" aria-label="Включить anime mode">
+                <span class="mode-toggle-label">Anime Mode</span>
+                <span class="mode-toggle-core"></span>
+            </button>
+        </nav>
+
+        <div class="hero-grid" id="top">
+            <section class="hero-copy" data-reveal>
+                <p class="eyebrow">Теоретическая физика как стиль мышления</p>
+                <h1>Теорминимум Ландау, оформленный как событие, а не как скучная ведомость.</h1>
+                <p class="hero-text">
+                    Это не просто список экзаменов. Это маршрут через механику, поля, кванты и статистику,
+                    где каждый сданный раздел меняет масштаб мышления. Я собрал проект как цифровую сцену для
+                    теорминимума: строгую по содержанию, дерзкую по подаче.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#board">Смотреть прогресс</a>
+                    <a class="button button-secondary" href="#tracks">Открыть треки</a>
+                </div>
+                <div class="hero-badges">
+                    <span class="hero-badge">phase shift</span>
+                    <span class="hero-badge">main character energy</span>
+                    <span class="hero-badge">theory arc</span>
+                </div>
+            </section>
+
+            <aside class="hero-panel" data-reveal>
+                <div class="signal-card">
+                    <p class="signal-label">Статус системы</p>
+                    <p class="signal-value">11 рубежей</p>
+                    <p class="signal-note">От математического аппарата до физической кинетики</p>
+                </div>
+                <div class="signal-card signal-card-accent">
+                    <p class="signal-label">Код проекта</p>
+                    <p class="signal-value">LND-∞</p>
+                    <p class="signal-note">Интерфейс для тех, кто любит физику без визуальной скуки</p>
+                </div>
+                <div class="signal-card signal-card-quote">
+                    <p class="signal-label">Режим кадра</p>
+                    <p class="signal-quote">"Если сдавать теорминимум, то так, будто у тебя финальная арка сезона."</p>
+                </div>
+            </aside>
+        </div>
+    </header>
+
+    <main>
+        <section class="metrics" aria-label="Ключевые метрики">
+            <article class="metric" data-counter="11" data-reveal>
+                <span class="metric-value">0</span>
+                <span class="metric-label">экзаменов в теорминимуме</span>
+            </article>
+            <article class="metric" data-counter="4" data-reveal>
+                <span class="metric-value">0</span>
+                <span class="metric-label">участника уже в трекере</span>
+            </article>
+            <article class="metric" data-counter="3" data-reveal>
+                <span class="metric-value">0</span>
+                <span class="metric-label">дисциплины уже закрыты у лидера</span>
+            </article>
+            <article class="metric" data-counter="100" data-suffix="%" data-reveal>
+                <span class="metric-value">0</span>
+                <span class="metric-label">внимания к атмосфере и подаче</span>
+            </article>
+        </section>
+
+        <section class="about" id="about">
+            <div class="section-heading" data-reveal>
+                <p class="eyebrow">О проекте</p>
+                <h2>Сайт про теорминимум должен ощущаться как вход в закрытый институтский архив будущего.</h2>
+            </div>
+            <div class="about-grid">
+                <article class="about-card" data-reveal>
+                    <h3>Смысл</h3>
+                    <p>
+                        Теоретический минимум Ландау состоит из одиннадцати экзаменов по математике и
+                        теоретической физике. Это одна из самых красивых академических легенд, и ей нужна
+                        соответствующая цифровая оболочка.
+                    </p>
+                </article>
+                <article class="about-card" data-reveal>
+                    <h3>Подача</h3>
+                    <p>
+                        Вместо обычной таблицы здесь работают масштабная типографика, кинематографичный фон,
+                        карточки треков и живая матрица прогресса. Сайт выглядит как самостоятельный проект,
+                        а не как черновик.
+                    </p>
+                </article>
+                <article class="about-card" data-reveal>
+                    <h3>Идея</h3>
+                    <p>
+                        Это цифровой трекер для людей, которым мало просто “сдать”. Хочется видеть путь,
+                        контекст, напряжение маршрута и ощущение большой интеллектуальной игры.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="tracks" id="tracks">
+            <div class="section-heading" data-reveal>
+                <p class="eyebrow">Экзаменационные треки</p>
+                <h2>Каждая дисциплина здесь выглядит как отдельный модуль большой теории.</h2>
+            </div>
+            <div class="track-grid">
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">01</span>
+                    <h3>Математика I</h3>
+                    <p>Аппарат, без которого дальше все рассыпается.</p>
+                    <span class="track-aura">base form</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">02</span>
+                    <h3>Механика</h3>
+                    <p>Язык траекторий, принципов и устойчивости.</p>
+                    <span class="track-aura">impact frame</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">03</span>
+                    <h3>Теория поля</h3>
+                    <p>Симметрии, лагранжианы и фундаментальные ограничения.</p>
+                    <span class="track-aura">domain expansion</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">04</span>
+                    <h3>Математика II</h3>
+                    <p>Продолжение аппарата там, где становится по-настоящему интересно.</p>
+                    <span class="track-aura">second opening</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">05</span>
+                    <h3>Квантовая механика</h3>
+                    <p>Точка, где интуиция ломается, а мышление становится точнее.</p>
+                    <span class="track-aura">power-up</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">06</span>
+                    <h3>КЭД</h3>
+                    <p>Одна из самых изящных и беспощадных конструкций в физике.</p>
+                    <span class="track-aura">boss fight</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">07</span>
+                    <h3>Статфизика I</h3>
+                    <p>Как из хаоса рождаются макроскопические законы.</p>
+                    <span class="track-aura">slow burn</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">08</span>
+                    <h3>Гидродинамика</h3>
+                    <p>Сплошные среды, потоки и красота уравнений движения.</p>
+                    <span class="track-aura">wave motion</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">09</span>
+                    <h3>Электродинамика сред</h3>
+                    <p>Когда поле начинает жить внутри материи.</p>
+                    <span class="track-aura">afterimage</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">10</span>
+                    <h3>Статфизика II</h3>
+                    <p>Глубже, тоньше и с большей плотностью идей.</p>
+                    <span class="track-aura">final act</span>
+                </article>
+                <article class="track-card" data-reveal data-tilt>
+                    <span class="track-index">11</span>
+                    <h3>Физическая кинетика</h3>
+                    <p>Последний слой маршрута, где динамика и статистика сходятся.</p>
+                    <span class="track-aura">ultimate form</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="anime-zone">
+            <div class="section-heading" data-reveal>
+                <p class="eyebrow">Anime Core</p>
+                <h2>Добавим немного безумия: режим, в котором даже подготовка к экзамену ощущается как финальная заставка сезона.</h2>
+            </div>
+            <div class="anime-grid">
+                <article class="anime-card anime-card-kana" data-reveal data-tilt>
+                    <span class="anime-kicker">Transmission</span>
+                    <h3>ENERGY // 解析</h3>
+                    <p>Неон, гличи, вспышки и ощущение, что сейчас заиграет opening.</p>
+                </article>
+                <article class="anime-card anime-card-quote" data-reveal>
+                    <span class="anime-kicker">Quote Loop</span>
+                    <p class="anime-line is-active">Сегодня ты учишь механику. Завтра ты споришь с самой Вселенной.</p>
+                    <p class="anime-line">Нельзя просто пройти теорию поля. Теория поля сначала проходит через тебя.</p>
+                    <p class="anime-line">Когда дошел до квантмеха и понял, что это только середина сезона.</p>
+                </article>
+                <article class="anime-card anime-card-meter" data-reveal>
+                    <span class="anime-kicker">Charge</span>
+                    <div class="charge-bar">
+                        <span class="charge-fill"></span>
+                    </div>
+                    <p class="charge-text">Концентрация главного героя: <strong>98%</strong></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="board" id="board">
+            <div class="section-heading" data-reveal>
+                <p class="eyebrow">Матрица прогресса</p>
+                <h2>Не просто список людей, а живая карта того, как продвигается маршрут через теорминимум.</h2>
+            </div>
+            <div class="board-shell" data-reveal>
+                <table class="progress-table">
+                    <caption>Прогресс участников по ключевым разделам теорминимума</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Участник</th>
+                            <th scope="col">Математика I</th>
+                            <th scope="col">Механика</th>
+                            <th scope="col">Теория поля</th>
+                            <th scope="col">Математика II</th>
+                            <th scope="col">Квантовая механика</th>
+                            <th scope="col">Статфизика I</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Катя Никулина</th>
+                            <td><span class="status status-pass">2026</span></td>
+                            <td><span class="status status-focus">в работе</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Андрей Иванов</th>
+                            <td><span class="status status-focus">май 2026</span></td>
+                            <td><span class="status status-focus">май 2026</span></td>
+                            <td><span class="status status-focus">июнь 2026</span></td>
+                            <td><span class="status status-focus">июнь 2026</span></td>
+                            <td><span class="status status-focus">в планах</span></td>
+                            <td><span class="status status-focus">май 2026</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Никита Першаков</th>
+                            <td><span class="status status-pass">2026</span></td>
+                            <td><span class="status status-pass">2026</span></td>
+                            <td><span class="status status-pass">2026</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Марк Андронов</th>
+                            <td><span class="status status-pass">1991</span></td>
+                            <td><span class="status status-pass">2026</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                            <td><span class="status status-pass">2026</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                            <td><span class="status status-empty">—</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="manifesto">
+            <article class="manifesto-panel" data-reveal>
+                <p class="eyebrow">Финальная нота</p>
+                <h2>Теорминимум не выглядит маленьким. Поэтому и сайт о нем не должен быть маленьким.</h2>
+                <p>
+                    Хороший интерфейс здесь не украшение, а продолжение идеи. Если предмет амбициозный,
+                    интерфейс тоже должен держать планку: быть ясным, дерзким и запоминающимся.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
